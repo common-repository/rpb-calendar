@@ -1,0 +1,305 @@
+/******************************************************************************
+ *                                                                            *
+ *    This file is part of RPB Calendar, a Wordpress plugin.                  *
+ *    Copyright (C) 2014  Yoann Le Montagner <yo35 -at- melix.net>            *
+ *                                                                            *
+ *    This program is free software: you can redistribute it and/or modify    *
+ *    it under the terms of the GNU General Public License as published by    *
+ *    the Free Software Foundation, either version 3 of the License, or       *
+ *    (at your option) any later version.                                     *
+ *                                                                            *
+ *    This program is distributed in the hope that it will be useful,         *
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of          *
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           *
+ *    GNU General Public License for more details.                            *
+ *                                                                            *
+ *    You should have received a copy of the GNU General Public License       *
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.   *
+ *                                                                            *
+ ******************************************************************************/
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Event/category edition forms and lists
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-adminTableLabel {
+	color: #888;
+	margin-right: 0.2em;
+}
+
+#rpbcalendar-linkEditionBox #rpbcalendar-eventLinkField {
+	width: 100%;
+}
+
+#rpbcalendar-dateTimeEditionBox #rpbcalendar-eventDateBeginPicker,
+#rpbcalendar-dateTimeEditionBox #rpbcalendar-eventDateEndPicker {
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+
+th#rpbevent_date_time { /* Event list -> date/time column */
+	width: 18%;
+}
+
+th#rpbevent_link,        /* Event list -> link column */
+th#rpbevent_categories { /* Event list -> category column */
+	width: 10%;
+}
+
+th#rpbevent_category_color { /* Category list -> color colum */
+	width: 15%;
+}
+
+td.rpbevent_categories ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+td.rpbevent_date_time div {
+	color: #333;
+}
+
+td.rpbevent_date_time .rpbcalendar-eventDateEnd {
+	margin-top: 0.25em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Date picker */
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-datePickerPopup {
+	display: none;
+	position: absolute;
+}
+
+.rpbcalendar-datePickerPopup.rpbcalendar-popupVisible {
+	display: block;
+}
+
+.rpbcalendar-datePickerPopup .ui-datepicker {
+	position: relative;
+	z-index: 100001;
+}
+
+.rpbcalendar-datePickerPopup .rpbcalendar-popupBackground {
+	position: fixed;
+	z-index: 100000;
+	width : 100%;
+	height: 100%;
+	left: 0px;
+	top : 0px;
+}
+
+.rpbcalendar-datePickerPopup .ui-datepicker-title {
+	text-transform: capitalize;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Category selector */
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-eventCategorySelector {
+	border: solid 1px #ddd;
+	background-color: #fff;
+	padding: 0px 0.9em;
+	overflow: auto;
+}
+
+.rpbcalendar-eventCategorySelector ul ul {
+	margin-left: 18px;
+}
+
+.rpbcalendar-eventCategorySelector li {
+	margin: 0px;
+	line-height: 1.75em;
+}
+
+.rpbcalendar-eventCategorySelector input[type="checkbox"] {
+	vertical-align: -0.32em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Box layout */
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-hBox {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+
+.rpbcalendar-vBox {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+.rpbcalendar-vBox.rpbcalendar-spaceAround,
+.rpbcalendar-hBox.rpbcalendar-spaceAround {
+	justify-content: space-around;
+}
+
+.rpbcalendar-hBox > *,
+.wp-core-ui .rpbcalendar-hBox > * {
+	margin: 0px 0px 0px 5px;
+}
+
+.rpbcalendar-vBox > *,
+.wp-core-ui .rpbcalendar-vBox > * {
+	margin: 5px 0px 0px 0px;
+}
+
+.rpbcalendar-hBox.rpbcalendar-spaceAround > *,
+.wp-core-ui .rpbcalendar-hBox.rpbcalendar-spaceAround > *,
+.rpbcalendar-hBox > :first-child,
+.wp-core-ui .rpbcalendar-hBox > :first-child {
+	margin-left: 0px;
+}
+
+.rpbcalendar-vBox.rpbcalendar-spaceAround > *,
+.wp-core-ui .rpbcalendar-vBox.rpbcalendar-spaceAround > *,
+.rpbcalendar-vBox > :first-child,
+.wp-core-ui .rpbcalendar-vBox > :first-child {
+	margin-top: 0px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Grid layout */
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-gridLayout {
+	display: table;
+}
+
+.rpbcalendar-gridLayout > div {
+	display: table-row;
+}
+
+.rpbcalendar-gridLayout > div > div {
+	display: table-cell;
+	vertical-align: middle;
+	padding-top : 5px;
+	padding-left: 5px;
+}
+
+.rpbcalendar-gridLayout > div:first-child > div {
+	padding-top: 0px;
+}
+
+.rpbcalendar-gridLayout > div > div:first-child {
+	padding-left: 0px;
+}
+
+.rpbcalendar-gridLayout > div > div > *,
+.wp-core-ui .rpbcalendar-gridLayout > div > div > * {
+	margin: 0px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* "Add several" page */
+/* -------------------------------------------------------------------------- */
+
+a.rpbcalendar-cloneEntryButton {
+	color: #080;
+}
+
+a.rpbcalendar-cloneEntryButton:hover {
+	color: #2b2;
+}
+
+a.rpbcalendar-removeEntryButton {
+	color: #c00;
+}
+
+a.rpbcalendar-removeEntryButton:hover {
+	color: #e55;
+}
+
+#rpbcalendar-addSeveralPage .rpbcalendar-cloneEntryButton,
+#rpbcalendar-addSeveralPage .rpbcalendar-removeEntryButton {
+	margin-top: 20px;
+}
+
+.rpbcalendar-eventEntry + .rpbcalendar-eventEntry {
+	margin-top: 25px;
+}
+
+#rpbcalendar-addSeveralPage .rpbcalendar-labelCell {
+	text-align: right;
+	font-weight: bold;
+}
+
+#rpbcalendar-addSeveralPage .rpbcalendar-eventTitleField,
+#rpbcalendar-addSeveralPage .rpbcalendar-eventLinkField,
+#rpbcalendar-addSeveralPage .rpbcalendar-eventCategorySelector {
+	width: 250px;
+}
+
+#rpbcalendar-addSeveralPage .rpbcalendar-eventCategorySelector {
+	height: 125px; /* TODO: avoid fixed height */
+}
+
+#rpbcalendar-addSeveralPage .rpbcalendar-eventTeaserField {
+	height: 127px; /* TODO: avoid fixed height */
+}
+
+#rpbcalendar-addSeveralPage .rpbcalendar-eventContentField {
+	width: 100%;
+}
+
+#rpbcalendar-addSeveralPage .rpbcalendar-eventDateBeginPicker,
+#rpbcalendar-addSeveralPage .rpbcalendar-eventDateEndPicker {
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+
+#rpbcalendar-addSeveralPage .rpbcalendar-eventDateBeginWeekday,
+#rpbcalendar-addSeveralPage .rpbcalendar-eventDateEndWeekday {
+	margin-left: 5px;
+}
+
+#rpbcalendar-addSeveralPage .rpbcalendar-hBox > div + div {
+	margin-left: 20px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* About page */
+/* -------------------------------------------------------------------------- */
+
+#rpbcalendar-translatorList {
+	display: table;
+}
+
+#rpbcalendar-translatorList div {
+	display: table-row;
+}
+
+#rpbcalendar-translatorList dt,
+#rpbcalendar-translatorList dd {
+	display: table-cell;
+}
+
+#rpbcalendar-translatorList dd {
+	padding-left: 1.5em;
+}
+
+#rpbcalendar-translatorList img {
+	vertical-align: middle;
+	margin-right: 0.25em;
+}

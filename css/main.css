@@ -1,0 +1,177 @@
+/******************************************************************************
+ *                                                                            *
+ *    This file is part of RPB Calendar, a Wordpress plugin.                  *
+ *    Copyright (C) 2014  Yoann Le Montagner <yo35 -at- melix.net>            *
+ *                                                                            *
+ *    This program is free software: you can redistribute it and/or modify    *
+ *    it under the terms of the GNU General Public License as published by    *
+ *    the Free Software Foundation, either version 3 of the License, or       *
+ *    (at your option) any later version.                                     *
+ *                                                                            *
+ *    This program is distributed in the hope that it will be useful,         *
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of          *
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           *
+ *    GNU General Public License for more details.                            *
+ *                                                                            *
+ *    You should have received a copy of the GNU General Public License       *
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.   *
+ *                                                                            *
+ ******************************************************************************/
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Category tags */
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-categoryTag {
+	display: inline-block;
+	width : 1.2em;
+	height: 1.2em;
+	border-radius: 0.6em;
+	vertical-align: -0.25em;
+}
+
+.rpbcalendar-bigCategoryTag {
+	display: block;
+	width : 3.5em;
+	height: 3.5em;
+	border-radius: 0.3em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Date separator */
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-dateSeparator {
+	display: inline-block;
+	vertical-align: 0.1em;
+	margin-left : 1.1em;
+	margin-right: 0.9em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Event blocks */
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-eventBlock {
+	padding: 0.3em 0.5em 0.3em;
+	font-size: 85%;
+	line-height: 1.4em;
+}
+
+.rpbcalendar-eventBlock .rpbcalendar-eventTitle {
+	font-weight: bold;
+}
+
+.rpbcalendar-eventBlockList .rpbcalendar-eventBlock {
+	display: inline-block;
+	margin-bottom: 5px;
+	border-radius: 0.3em;
+	vertical-align: top;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Event tooltips */
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-qtip.qtip-tipped {
+	border-width: 2px;
+	font-family: sans-serif;
+}
+
+.rpbcalendar-qtip.qtip-tipped .qtip-icon {
+	border-width: 0px;
+	top: 5px;
+	right: 5px;
+	margin-top: 0px;
+}
+
+.rpbcalendar-qtip.qtip {
+	font-size: 12px;
+	line-height: 15px;
+	max-width: 400px;
+}
+
+.rpbcalendar-qtip .qtip-content {
+	padding: 0.7em;
+}
+
+.rpbcalendar-qtip .qtip-content > * {
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+.rpbcalendar-qtip .qtip-content > *:first-child {
+	margin-top: 0em;
+}
+
+.rpbcalendar-qtip .qtip-content > *:last-child {
+	margin-bottom: 0em;
+}
+
+.rpbcalendar-qtip .rpbcalendar-eventTip-title {
+	font-size: 120%;
+	font-weight: bold;
+	margin-top: 0.3em;
+}
+
+.rpbcalendar-qtip .rpbcalendar-eventTip-beginEndDates {
+	font-style: italic;
+	font-size: 75%;
+	color: #eee;
+	margin-top: 0.5em;
+	margin-bottom: 0.2em;
+}
+
+.rpbcalendar-qtip .rpbcalendar-eventTip-beginEndDates .rpbcalendar-dateSeparator {
+	font-style: normal;
+}
+
+.rpbcalendar-qtip .rpbcalendar-eventTip-title,
+.rpbcalendar-qtip .rpbcalendar-eventTip-beginEndDates {
+	margin-right: 3em;
+}
+
+.rpbcalendar-qtip .rpbcalendar-eventTip-releaseInfo {
+	color: #888;
+	font-style: italic;
+	font-size: 80%;
+}
+
+.rpbcalendar-qtip .qtip-content > div + .rpbcalendar-eventTip-categories {
+	margin-top: -0.2em;
+}
+
+.rpbcalendar-qtip .qtip-content > div + .rpbcalendar-eventTip-releaseInfo {
+	margin-top: -0.4em;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Calendar table */
+/* -------------------------------------------------------------------------- */
+
+.rpbcalendar-calendar .uicalendar-spinanim {
+	position: absolute;
+	transform-origin: right top;
+	-ms-transform-origin: right top;
+	-webkit-transform-origin: right top;
+}
+
+.rpbcalendar-calendar .fc-event {
+	border: none;
+	font-size: 100%;
+}
+
+.rpbcalendar-calendar table.fc-header .fc-header-title h2,
+.rpbcalendar-calendar th.fc-day-header {
+	text-transform: capitalize;
+}

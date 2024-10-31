@@ -1,0 +1,71 @@
+=== RPB Calendar ===
+Contributors: yo35
+Tags: calendar, dates, events, event management, event organizer
+Requires at least: 3.9
+Tested up to: 4.3.1
+Stable tag: trunk
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+This plugin allows you to list and schedule events, and to display them in a calendar in a post or a page.
+
+
+
+== Description ==
+
+RPB Calendar allows you to list and schedule events, and to display them
+in a calendar in a post or a page of your WordPress blog.
+
+= Links =
+
+* [Ask for help or report a problem](https://github.com/yo35/rpb-calendar/issues)
+* [Source code (GitHub repository)](https://github.com/yo35/rpb-calendar)
+
+= Quick start guide =
+
+Install the the plugin on your website, and insert a `[rpbcalendar]` tag
+to display the event calendar.
+
+= Features =
+
+* Calendar table to browse the events. Use AJAX for smooth navigation.
+* Customizable widgets to list the events of the current day and the upcoming ones.
+* Color-based classification of events.
+* Rich tool-tip system to attach information to events without overcrowding your blog posts/pages.
+* Multi-language support.
+
+If you encounter some bugs with this plugin, or if you wish to get new features
+in the future versions, you can report/propose them
+in the [GitHub bug tracker](https://github.com/yo35/rpb-calendar/issues).
+
+If you are interested in translating this plugin into your language,
+please [contact the author](mailto:yo35@melix.net).
+
+
+
+== Installation ==
+
+1. Download [rpb-calendar.zip](http://downloads.wordpress.org/plugin/rpb-calendar.zip)
+and upload its content to the `/wp-content/plugins/` directory of your website.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Insert a `[rpbcalendar]` tag in a post or a page to display the event calendar.
+
+For extensive details about plugin installation and management,
+please have a look to the general [plugin management page](http://codex.wordpress.org/Managing_Plugins).
+
+
+
+== Changelog ==
+
+= 1.99.6 (October 13, 2015) =
+* Fix bug occurring on WP 4.3.
+
+= 1.99.5 (September 13, 2014) =
+* Improve the "add several events" page.
+
+= 1.99.4 (September 2, 2014) =
+* German translation (thanks to Kay Zeisberg).
+* Add page to create several similar events in one click (beta feature).
+
+= 1.99.3 (August 28, 2014) =
+* First public version.
